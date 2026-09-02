@@ -4,7 +4,6 @@ import { testimonials } from '../data/content.js';
 export default function TestimonialsPage() {
   return (
     <main>
-      <div className="page-hero page-hero--testimonials"></div>
 
       <Testimonials />
 

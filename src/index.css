@@ -2048,14 +2048,7 @@ a:focus-visible, button:focus-visible {
   display: none;
 }
 
-/* ---------- Testimonials page hero background ---------- */
-.page-hero--testimonials {
-  position: relative;
-  background: url('https://placehold.co/1600x600/1B3A5C/FFFFFF?text=Densco+Ventures');
-  background-size: cover;
-  background-position: center;
-  padding: 90px 0;
-}
+
 
 /* ---------- Service detail icon + title row (always red badge) ---------- */
 .service-detail__title-row {
