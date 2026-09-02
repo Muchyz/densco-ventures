@@ -175,7 +175,7 @@ export const galleryImages = [
   { id: 13, src: '/gallery/airstrip-duty.jpg', caption: 'Guard on duty at Ithookwe Airstrip' },
   { id: 14, src: '/gallery/parade-lineup.jpg', caption: 'Guard team in parade formation' },
   { id: 15, src: '/gallery/office-desk.jpg', caption: 'Operations staff monitoring radio communications at the office' },
-  { id: 16, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+16', caption: 'Guard on duty at a client facility' },
+  { id: 16, src: '/gallery/toyota-outlet-2.jpg', caption: 'Guards posted at a client automotive outlet' },
 ];
 
 export const testimonials = [
