@@ -148,7 +148,7 @@ export const trainingStandards = [
   { label: 'Discipline and Professional Conduct', desc: 'Upholding integrity, confidentiality, and professionalism at all times.' },
 ];
 
-export const coreValues = ['Integrity', 'Professionalism', 'Discipline', 'Reliability', 'Client Satisfaction'];
+export const coreValues = ['Innovative', 'Integrity', 'Customer relation', 'Discipline'];
 
 export const whyChooseUs = [
   'Highly trained and vetted security personnel',

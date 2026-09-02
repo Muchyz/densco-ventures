@@ -7,8 +7,9 @@ export default function Mission() {
       <span className="manifesto-panel__quote">&ldquo;</span>
       <span className="manifesto-panel__label">Our Mission</span>
       <p className="manifesto-panel__text">
-        To provide dependable and professional security services that guarantee safety,
-        peace of mind, and protection of our clients&apos; property and assets.
+        To establish and maintain a long-term partnership with our clients
+        through highly innovative value added solutions that will enable
+        them meet their desired objectives in security.
       </p>
     </div>
   );
