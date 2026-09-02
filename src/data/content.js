@@ -160,11 +160,11 @@ export const whyChooseUs = [
 ];
 
 export const galleryImages = [
-  { id: 1, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+01', caption: 'Guards on parade at the compound gate' },
-  { id: 2, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+02', caption: 'Guard team on assignment at a client resort' },
-  { id: 3, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+03', caption: 'Guard stationed at a client gate' },
-  { id: 4, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+04', caption: 'Guards on duty at a protected client site' },
-  { id: 5, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+05', caption: 'Guard team stationed at the entrance' },
+  { id: 1, src: '/gallery/certificates.jpg', caption: 'Guards displaying their training and vetting certificates' },
+  { id: 2, src: '/gallery/client-site.jpg', caption: 'Guard team on assignment at a client site' },
+  { id: 3, src: '/gallery/salute-parade.jpg', caption: 'Officers saluting during parade drill' },
+  { id: 4, src: '/gallery/school-gate.jpg', caption: 'Guard detail posted at a school gate' },
+  { id: 5, src: '/gallery/k9-unit.jpg', caption: 'K9 unit with handlers on patrol' },
   { id: 6, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+06', caption: 'Officers on patrol with security equipment' },
   { id: 7, src: '/team/formation.jpg', caption: 'Densco Ventures guards standing in formation outside the head office' },
   { id: 8, src: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Photo+08', caption: 'Officers saluting during an official visit' },
