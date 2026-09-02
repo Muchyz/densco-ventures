@@ -2143,7 +2143,7 @@ a:focus-visible, button:focus-visible {
   padding-bottom: 46px !important;
   background:
     linear-gradient(180deg, rgba(11,29,51,0.25) 0%, rgba(11,29,51,0.55) 55%, rgba(8,20,36,0.92) 100%),
-    url('https://placehold.co/1600x600/1B3A5C/FFFFFF?text=Densco+Ventures');
+    url('/team/guard-van.jpg');
   background-size: cover;
   background-position: center;
 }
