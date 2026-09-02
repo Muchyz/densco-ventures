@@ -178,6 +178,7 @@ export const galleryImages = [
   { id: 16, src: '/gallery/toyota-outlet-2.jpg', caption: 'Guards posted at a client automotive outlet' },
   { id: 17, src: '/gallery/k9-team.mp4', type: 'video', caption: 'K9 unit on duty with handlers' },
   { id: 18, src: '/gallery/k9-gate-duty.mp4', type: 'video', caption: 'K9 unit and guards on duty at a client gate' },
+  { id: 19, src: '/gallery/control-room-monitoring.jpg', caption: '24/7 monitoring and control room support' },
 ];
 
 export const testimonials = [

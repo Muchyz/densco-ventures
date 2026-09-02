@@ -3186,7 +3186,7 @@ a:focus-visible, button:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('https://placehold.co/1600x600/1B3A5C/FFFFFF?text=Densco+Ventures');
+  background: url('/gallery/control-room-monitoring.jpg');
   background-size: cover;
   background-position: center 22%;
   animation: heroSlowZoom 18s ease-in-out infinite alternate;
