@@ -177,6 +177,7 @@ export const galleryImages = [
   { id: 15, src: '/gallery/office-desk.jpg', caption: 'Operations staff monitoring radio communications at the office' },
   { id: 16, src: '/gallery/toyota-outlet-2.jpg', caption: 'Guards posted at a client automotive outlet' },
   { id: 17, src: '/gallery/k9-team.mp4', type: 'video', caption: 'K9 unit on duty with handlers' },
+  { id: 18, src: '/gallery/k9-gate-duty.mp4', type: 'video', caption: 'K9 unit and guards on duty at a client gate' },
 ];
 
 export const testimonials = [
