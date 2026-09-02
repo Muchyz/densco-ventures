@@ -3473,7 +3473,7 @@ a:focus-visible, button:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('https://placehold.co/1600x600/1B3A5C/FFFFFF?text=Densco+Ventures');
+  background: url('/team/certifications-hero.png');
   background-size: cover;
   background-position: center 40%;
   filter: blur(3px);
