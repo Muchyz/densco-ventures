@@ -170,7 +170,7 @@ export const galleryImages = [
   { id: 8, src: '/gallery/stadium-formation.jpg', caption: 'Guards in formation during an event security detail' },
   { id: 9, src: '/gallery/radio-duty.jpg', caption: 'Officers on radio communication duty at the gate' },
   { id: 10, src: '/gallery/field-briefing.jpg', caption: 'Guards assembled for a field briefing' },
-  { id: 11, src: '/gallery/client-guard-dog.jpg', caption: 'A client site protected with a trained guard dog' },
+  { id: 11, src: '/gallery/client-guard-dog.jpg', caption: 'A client\'s trained security dog' },
   { id: 12, src: '/gallery/ceremony-salute.jpg', caption: 'Officers saluting during a ceremony' },
   { id: 13, src: '/gallery/airstrip-duty.jpg', caption: 'Guard on duty at Ithookwe Airstrip' },
   { id: 14, src: '/gallery/parade-lineup.jpg', caption: 'Guard team in parade formation' },
