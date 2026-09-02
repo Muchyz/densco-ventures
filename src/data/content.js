@@ -176,6 +176,7 @@ export const galleryImages = [
   { id: 14, src: '/gallery/parade-lineup.jpg', caption: 'Guard team in parade formation' },
   { id: 15, src: '/gallery/office-desk.jpg', caption: 'Operations staff monitoring radio communications at the office' },
   { id: 16, src: '/gallery/toyota-outlet-2.jpg', caption: 'Guards posted at a client automotive outlet' },
+  { id: 17, src: '/gallery/k9-team.mp4', type: 'video', caption: 'K9 unit on duty with handlers' },
 ];
 
 export const testimonials = [

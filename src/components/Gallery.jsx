@@ -14,16 +14,23 @@ export default function Gallery() {
         </p>
 
         <div className="gallery-grid">
-          {galleryImages.map((img) => (
+          {galleryImages.map((item) => (
             <button
-              key={img.id}
+              key={item.id}
               className="gallery-item"
-              onClick={() => setActive(img)}
-              aria-label={`Enlarge image: ${img.caption}`}
+              onClick={() => setActive(item)}
+              aria-label={item.type === 'video' ? `Play video: ${item.caption}` : `Enlarge image: ${item.caption}`}
             >
-              <img src={img.src} alt={img.caption} loading="lazy" />
+              {item.type === 'video' ? (
+                <>
+                  <video src={item.src} muted playsInline preload="metadata" />
+                  <span className="gallery-item__play-icon" aria-hidden="true">▶</span>
+                </>
+              ) : (
+                <img src={item.src} alt={item.caption} loading="lazy" />
+              )}
               <span className="gallery-item__overlay">
-                <span className="gallery-item__caption">{img.caption}</span>
+                <span className="gallery-item__caption">{item.caption}</span>
               </span>
             </button>
           ))}
@@ -40,11 +47,21 @@ export default function Gallery() {
           <button
             className="lightbox__close"
             onClick={() => setActive(null)}
-            aria-label="Close enlarged image"
+            aria-label="Close"
           >
             ✕
           </button>
-          <img src={active.src} alt={active.caption} onClick={(e) => e.stopPropagation()} />
+          {active.type === 'video' ? (
+            <video
+              src={active.src}
+              controls
+              autoPlay
+              playsInline
+              onClick={(e) => e.stopPropagation()}
+            />
+          ) : (
+            <img src={active.src} alt={active.caption} onClick={(e) => e.stopPropagation()} />
+          )}
         </div>
       )}
     </section>
