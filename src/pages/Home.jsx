@@ -22,7 +22,7 @@ export default function Home() {
       <Hero />
       <Divider />
 
-      <About />
+      <About preview={true} />
       <Divider />
 
       <section className="section section--alt">

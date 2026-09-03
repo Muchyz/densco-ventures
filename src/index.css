@@ -559,6 +559,15 @@ button { font-family: inherit; cursor: pointer; }
   .split { grid-template-columns: 1fr; }
 }
 
+.about-split--preview {
+  grid-template-columns: 1fr;
+}
+
+.about-learnmore {
+  display: inline-block;
+  margin-top: 18px;
+}
+
 .mv-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
