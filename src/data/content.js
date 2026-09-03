@@ -1,3 +1,6 @@
+import consultancyImg from '../assets/images/consultancy.jpg';
+import perimeterImg from '../assets/images/perimeter.jpg';
+import accessControlImg from '../assets/images/access-control.jpg';
 import alarmImg from '../assets/images/alarm.jpg';
 import cctvImg from '../assets/images/cctv.jpg';
 import guardingImg from '../assets/images/guarding.jpg';
@@ -87,7 +90,7 @@ export const serviceDetails = [
     id: 'access-control',
     icon: Fingerprint,
     title: 'Access Control',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Access+Control',
+    image: accessControlImg,
     highlights: [
       'Biometric and card-based options',
       'Time and attendance tracking',
@@ -103,7 +106,7 @@ export const serviceDetails = [
     id: 'perimeter',
     icon: Zap,
     title: 'Perimeter Security (Electric & Razor Wire)',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Perimeter',
+    image: perimeterImg,
     highlights: [
       'Electric and razor wire fencing',
       'High quality standard materials',
@@ -119,7 +122,7 @@ export const serviceDetails = [
     id: 'consultancy',
     icon: ClipboardCheck,
     title: 'Security Consultancy',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Consultancy',
+    image: consultancyImg,
     highlights: [
       'Independent security audits',
       'Clear, comprehensive reports',
