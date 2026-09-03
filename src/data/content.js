@@ -1,3 +1,6 @@
+import alarmImg from '../assets/images/alarm.jpg';
+import cctvImg from '../assets/images/cctv.jpg';
+import guardingImg from '../assets/images/guarding.jpg';
 import { Shield, Tent, Camera, Search, GraduationCap, PackageSearch, Users, Bell, Fingerprint, Zap, ClipboardCheck, Check } from 'lucide-react';
 
 // Central place for all copy + placeholder data.
@@ -34,7 +37,7 @@ export const serviceDetails = [
     id: 'guarding',
     icon: Shield,
     title: 'Guarding Services',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Guarding',
+    image: guardingImg,
     badge: 'Most Popular',
     highlights: [
       'Uniformed & fully equipped officers',
@@ -52,7 +55,7 @@ export const serviceDetails = [
     id: 'cctv',
     icon: Camera,
     title: 'CCTV Cameras',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=CCTV',
+    image: cctvImg,
     highlights: [
       'Analogue and IP camera options',
       'Tailored to your budget and preference',
@@ -68,7 +71,7 @@ export const serviceDetails = [
     id: 'alarm',
     icon: Bell,
     title: 'Intruder Alarm System',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Alarm',
+    image: alarmImg,
     highlights: [
       'Instant intrusion alerts',
       'Automatic or manual control',
