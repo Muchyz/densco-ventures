@@ -1,4 +1,11 @@
 import consultancyImg from '../assets/images/consultancy.jpg';
+import metalDetectorImg from '../assets/images/metal-detector.jpg';
+import baggageScannerImg from '../assets/images/baggage-scanner.jpg';
+import backgroundCheckImg from '../assets/images/background-check.jpg';
+import automaticGateImg from '../assets/images/automatic-gate.jpg';
+import fireAlarmImg from '../assets/images/fire-alarm.jpg';
+import dog1Img from '../assets/images/dog-1.jpg';
+import dog2Img from '../assets/images/dog-2.jpg';
 import perimeterImg from '../assets/images/perimeter.jpg';
 import accessControlImg from '../assets/images/access-control.jpg';
 import alarmImg from '../assets/images/alarm.jpg';
@@ -152,7 +159,7 @@ export const serviceDetails = [
     id: 'fire-alarm',
     icon: Flame,
     title: 'Fire Alarm Systems',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Fire+Alarm',
+    image: fireAlarmImg,
     highlights: [
       'Early smoke and heat detection',
       'Automatic alarm triggering',
@@ -168,7 +175,7 @@ export const serviceDetails = [
     id: 'baggage-scanners',
     icon: Luggage,
     title: 'Luggage & Baggage Scanners',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Baggage+Scanners',
+    image: baggageScannerImg,
     highlights: [
       'Non-intrusive X-ray inspection',
       'Detects prohibited or suspicious items',
@@ -184,7 +191,7 @@ export const serviceDetails = [
     id: 'automatic-gates',
     icon: DoorOpen,
     title: 'Automatic Gates',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Automatic+Gates',
+    image: automaticGateImg,
     highlights: [
       'Remote-controlled entry',
       'Restricts access to intended persons',
@@ -200,7 +207,7 @@ export const serviceDetails = [
     id: 'background-checks',
     icon: UserCheck,
     title: 'Background Checks',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Background+Checks',
+    image: backgroundCheckImg,
     highlights: [
       'Employment history verification',
       'Character reference checks',
@@ -216,7 +223,7 @@ export const serviceDetails = [
     id: 'metal-detectors',
     icon: ScanSearch,
     title: 'Walkthrough / Metal Detectors',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Metal+Detectors',
+    image: metalDetectorImg,
     highlights: [
       'Screens all persons entering a premises',
       'Detects concealed metallic objects',
@@ -232,7 +239,7 @@ export const serviceDetails = [
     id: 'dog-surveillance',
     icon: PawPrint,
     title: 'Dog Surveillance Services',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=K9+Unit',
+    images: [dog1Img, dog2Img],
     highlights: [
       'Trained K9 units with handlers',
       'Enhanced perimeter and patrol surveillance',

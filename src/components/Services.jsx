@@ -39,7 +39,20 @@ export default function Services({ detailed = false }) {
                   {svc.badge && (
                     <span className="service-detail__badge">{svc.badge}</span>
                   )}
-                  <img src={svc.image} alt={svc.alt} />
+                  {svc.images ? (
+                    <div style={{ display: 'flex', gap: '6px', width: '100%', height: '100%' }}>
+                      {svc.images.map((src, i) => (
+                        <img
+                          key={i}
+                          src={src}
+                          alt={svc.alt}
+                          style={{ width: '50%', height: '100%', objectFit: 'cover' }}
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <img src={svc.image} alt={svc.alt} />
+                  )}
                 </div>
                 <div className="service-detail__body">
                   <div className="service-detail__title-row">
