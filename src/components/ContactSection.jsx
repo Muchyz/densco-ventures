@@ -55,10 +55,10 @@ export default function ContactSection() {
                   <b>Follow &amp; Tag</b>
                   <span>{company.hashtag}</span>
                   <div className="contact-info__social">
-                    <a href="https://www.facebook.com/profile.php?id=61569605530931" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookIcon /></a>
-                    <a href="https://wa.me/254718539540" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><WhatsAppIcon /></a>
-                    <a href="https://vm.tiktok.com/ZS9k18PwgrBKu-gOcbD/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokIcon /></a>
-                    <a href="https://www.instagram.com/apronsecurityservices" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
+                    <a href="https://www.facebook.com/denscoventuresltd" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookIcon /></a>
+                    <a href="https://wa.me/254745979476" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><WhatsAppIcon /></a>
+                    <a href="https://vm.tiktok.com/ZS9SdDa9mJxwm-djgxf/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokIcon /></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
                   </div>
                 </div>
               </li>
