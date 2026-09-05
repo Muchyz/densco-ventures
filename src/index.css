@@ -4084,10 +4084,12 @@ a:focus-visible, button:focus-visible {
 }
 .other-service-card__img {
   position: relative;
+}
+.other-service-card__img-clip {
   aspect-ratio: 16/9;
   overflow: hidden;
 }
-.other-service-card__img img {
+.other-service-card__img-clip img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4105,6 +4107,7 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  z-index: 2;
 }
 .other-service-card__body {
   padding: 30px 20px 20px;
