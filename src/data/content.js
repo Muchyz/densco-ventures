@@ -465,3 +465,16 @@ export const clientLogos = [
   { id: 'garrett', src: '/assets/clients/garrett.png', alt: 'Garrett Metal Detectors' },
   { id: 'secolink', src: '/assets/clients/secolink.png', alt: 'Secolink' },
 ];
+
+export const protectedProperties = [
+  'Kitui Hospital Maternity and Nursing Homes',
+  'Neema Hospital Limited',
+  'Green Acres Garden',
+  'Kitui County Probation Office',
+  'Azusa Community Church',
+  'Toyota Kenya Kitui',
+  'Port County Hotel Kabati',
+  'Bishop Dunne School Kabati',
+  'Machakos Hardware Kitui',
+  'Jika Kitui',
+];

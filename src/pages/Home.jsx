@@ -10,6 +10,7 @@ import Services from '../components/Services.jsx';
 import GalleryPreview from '../components/GalleryPreview.jsx';
 import Testimonials from '../components/Testimonials.jsx';
 import Clients from '../components/Clients.jsx';
+import ProtectedProperties from '../components/ProtectedProperties.jsx';
 import FAQ from '../components/FAQ.jsx';
 import WhyChooseUs from '../components/WhyChooseUs.jsx';
 import Commitment from '../components/Commitment.jsx';
@@ -48,6 +49,7 @@ export default function Home() {
 
       <Testimonials />
       <Clients />
+      <ProtectedProperties />
       <Divider />
 
       <FAQ />
