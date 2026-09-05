@@ -1,4 +1,6 @@
 import consultancyImg from '../assets/images/consultancy.jpg';
+import eventsSecurityImg from '../assets/images/events-security.jpg';
+import crowdControlImg from '../assets/images/crowd-control.jpg';
 import assetsRecoveryImg from '../assets/images/assets-recovery.jpg';
 import securityTrainingImg from '../assets/images/security-training.jpg';
 import piBadge from '../assets/badges/private-investigator-badge.jpg';
@@ -258,7 +260,7 @@ export const serviceDetails = [
     id: 'events-security',
     icon: Tent,
     title: 'Events Security',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Events+Security',
+    image: eventsSecurityImg,
     highlights: [
       'Ushering and access screening',
       'VIP and dignitary protection',
@@ -322,7 +324,7 @@ export const serviceDetails = [
     id: 'crowd-control',
     icon: Users,
     title: 'Crowd Control',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Crowd+Control',
+    image: crowdControlImg,
     highlights: [
       'Organized, disciplined crowd management',
       'Suited for large public gatherings',
