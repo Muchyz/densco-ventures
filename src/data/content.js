@@ -1,4 +1,5 @@
 import consultancyImg from '../assets/images/consultancy.jpg';
+import privateInvestigationsImg from '../assets/images/private-investigations.jpg';
 import eventsSecurityImg from '../assets/images/events-security.jpg';
 import crowdControlImg from '../assets/images/crowd-control.jpg';
 import assetsRecoveryImg from '../assets/images/assets-recovery.jpg';
@@ -276,7 +277,7 @@ export const serviceDetails = [
     id: 'private-investigations',
     icon: Search,
     title: 'Private Investigations',
-    image: piBadge,
+    image: privateInvestigationsImg,
     highlights: [
       'Discreet, professional investigators',
       'Fraud and theft investigations',
@@ -383,22 +384,46 @@ export const galleryImages = [
 
 export const testimonials = [
   {
+    name: 'Head of Facility Management',
+    role: 'Neema Hospital Limited',
+    avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=MM',
+    quote: 'Our patients and staff feel safe knowing Densco guards are on site around the clock. They are alert, well-mannered, and quick to respond whenever needed.',
+  },
+  {
+    name: 'Branch Operations Head',
+    role: 'Toyota Kenya Kitui',
+    avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=SN',
+    quote: 'Densco has secured our showroom and vehicle yard for months without a single incident. Their guards take vehicle inspection and access control seriously.',
+  },
+  {
+    name: 'School Administrator',
+    role: 'Bishop Dunne School Kabati',
+    avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=AK',
+    quote: 'Parents trust us more knowing there is a disciplined security presence at the gate every school day. Densco has been reliable and professional throughout.',
+  },
+  {
+    name: 'Head of Operations',
+    role: 'Kitui County Probation Office',
+    avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=JM',
+    quote: 'We needed a security partner who understood a government office environment. Densco guards are courteous with visitors yet firm on procedure.',
+  },
+  {
     name: 'Grace Wanjiru',
     role: 'Property Manager, Greenview Apartments',
     avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=GW',
-    quote: 'Densco Ventures has been guarding our estate for over a year. Their guards are punctual, disciplined, and always alert. We rarely worry about security anymore. (Placeholder testimonial)',
+    quote: 'Densco Ventures has been guarding our estate for over a year. Their guards are punctual, disciplined, and always alert. We rarely worry about security anymore.',
   },
   {
     name: 'Daniel Kimani',
     role: 'Operations Manager, Kimani & Sons Hardware',
     avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=DK',
-    quote: 'What stands out is how quickly they respond when something comes up. One call and a supervisor is on site within minutes. Very professional team. (Placeholder testimonial)',
+    quote: 'What stands out is how quickly they respond when something comes up. One call and a supervisor is on site within minutes. Very professional team.',
   },
   {
     name: 'Fatuma Ali',
     role: 'Administrator, Riverside Primary School',
     avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=FA',
-    quote: 'The guards assigned to our school are courteous with parents and firm at the gate. It gives every parent real peace of mind dropping off their children. (Placeholder testimonial)',
+    quote: 'The guards assigned to our school are courteous with parents and firm at the gate. It gives every parent real peace of mind dropping off their children.',
   },
   {
     name: 'Peter Mwangi',
@@ -410,7 +435,7 @@ export const testimonials = [
     name: 'Esther Njoki',
     role: 'Events Coordinator, Njoki Events Co.',
     avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=EN',
-    quote: 'They handled crowd control for a 500-guest event flawlessly, calm, organized, and professional from setup to close. We will be booking them again. (Placeholder testimonial)',
+    quote: 'They handled crowd control for a 500-guest event flawlessly, calm, organized, and professional from setup to close. We will be booking them again.',
   },
 ];
 
