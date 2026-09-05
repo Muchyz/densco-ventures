@@ -37,10 +37,12 @@ export default function ServiceDetailPage() {
             <ArrowLeft size={16} /> Back to Services
           </button>
           {service.badge && <span className="service-page__badge">{service.badge}</span>}
-          <div className="service-page__hero-icon">
-            <service.icon size={28} strokeWidth={2} />
+          <div className="service-page__hero-heading">
+            <div className="service-page__hero-icon">
+              <service.icon size={28} strokeWidth={2} />
+            </div>
+            <h1 className="service-page__title">{service.title}</h1>
           </div>
-          <h1 className="service-page__title">{service.title}</h1>
         </div>
       </div>
 
