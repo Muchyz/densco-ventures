@@ -46,10 +46,7 @@ export default function About({ preview = false }) {
             We serve a wide client base including companies, parastatals, county
             government, banks, and both residential and business premises in urban
             and rural areas, always offering customized solutions designed around
-            each client's specific needs. The company has also diversified into
-            non-banking financial services, including insurance broking, home
-            loans, personal loans, business loans, short-term loans, and debt
-            collection services.
+            each client's specific needs.
           </p>
             </>
           )}

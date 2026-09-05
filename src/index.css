@@ -1248,6 +1248,8 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--gray-body);
   font-size: 0.95rem;
   line-height: 1.5;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .contact-info__icon {
   flex-shrink: 0;

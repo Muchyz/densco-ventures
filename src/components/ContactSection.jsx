@@ -19,7 +19,11 @@ export default function ContactSection() {
                 <span className="contact-info__icon"><Phone size={18} /></span>
                 <div>
                   <b>Phone</b>
-                  <span>{company.phones.join(' / ')}</span>
+                  <span>
+                    {company.phones.map((phone, i) => (
+                      <span key={i} style={{ display: 'block' }}>{phone}</span>
+                    ))}
+                  </span>
                 </div>
               </li>
               <li>
