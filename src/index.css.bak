@@ -1190,7 +1190,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ---------- Contact / Footer (redesigned) ---------- */
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: start;
 }
@@ -1198,8 +1198,7 @@ button { font-family: inherit; cursor: pointer; }
 
 .contact-info-card,
 .contact-form-card {
-  width: 100%;
-  min-width: 0;
+  width: calc(100% - 24px);
   max-width: 480px;
   margin: 0 auto;
   box-sizing: border-box;
