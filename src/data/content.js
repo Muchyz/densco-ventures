@@ -1,4 +1,5 @@
 import consultancyImg from '../assets/images/consultancy.jpg';
+import assetsRecoveryImg from '../assets/images/assets-recovery.jpg';
 import securityTrainingImg from '../assets/images/security-training.jpg';
 import piBadge from '../assets/badges/private-investigator-badge.jpg';
 import metalDetectorImg from '../assets/images/metal-detector.jpg';
@@ -305,7 +306,7 @@ export const serviceDetails = [
     id: 'assets-recovery',
     icon: PackageSearch,
     title: 'Assets Recovery',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Assets+Recovery',
+    image: assetsRecoveryImg,
     highlights: [
       'Tracks and recovers lost or stolen assets',
       'Handles fraud and corruption cases',
