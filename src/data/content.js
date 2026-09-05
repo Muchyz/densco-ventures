@@ -29,7 +29,7 @@ export const company = {
   hashtag: '#DenscoVentures',
   phones: ['0702 976 287', '0745 979 476', '0796 410 971', '0708 177 714', '0746 078 455'],
   email: 'Infodenscoventures2@gmail.com',
-  poBox: '',
+  poBox: 'P.O. Box 81-90201, Mutomo',
   headOffice: 'Densco Ventures Limited, Along Kitui Bypass, Kitui',
   branchOffice: 'Regional offices in Mutomo, Mwingi, Zombe, Matuu, Wote and Nairobi',
   domain: '',
