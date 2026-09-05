@@ -10,6 +10,7 @@ import GalleryPage from './pages/Gallery.jsx';
 import TestimonialsPage from './pages/Testimonials.jsx';
 import ContactPage from './pages/Contact.jsx';
 import CertificationsPage from './pages/Certifications.jsx';
+import ServiceDetailPage from './pages/ServiceDetailPage.jsx';
 
 // Handles anchor-scroll behaviour: if the URL has a #hash, scroll that
 // section into view once the new page has rendered. Otherwise scroll to top.
@@ -42,6 +43,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/our-services" element={<OurServicesPage />} />
+        <Route path="/services/:id" element={<ServiceDetailPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/contact" element={<ContactPage />} />

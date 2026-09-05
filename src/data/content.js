@@ -33,19 +33,19 @@ export const logoPlaceholder =
   'https://placehold.co/120x120/1B3A5C/D4A017?text=DVL&font=oswald';
 
 export const coreServices = [
-  { icon: Shield, title: 'Security Guarding' },
-  { icon: Tent, title: 'Events Security' },
-  { icon: Camera, title: 'CCTV Installations' },
-  { icon: Search, title: 'Private Investigations' },
-  { icon: GraduationCap, title: 'Security & Safety Trainings' },
-  { icon: PackageSearch, title: 'Assets Recovery' },
-  { icon: Users, title: 'Crowd Control' },
-  { icon: Flame, title: 'Fire Alarm Systems' },
-  { icon: Luggage, title: 'Luggage & Baggage Scanners' },
-  { icon: DoorOpen, title: 'Automatic Gates' },
-  { icon: UserCheck, title: 'Background Checks' },
-  { icon: ScanSearch, title: 'Walkthrough Metal Detectors' },
-  { icon: PawPrint, title: 'Dog Surveillance Services' },
+  { icon: Shield, title: 'Security Guarding', id: 'guarding' },
+  { icon: Tent, title: 'Events Security', id: 'events-security' },
+  { icon: Camera, title: 'CCTV Installations', id: 'cctv' },
+  { icon: Search, title: 'Private Investigations', id: 'private-investigations' },
+  { icon: GraduationCap, title: 'Security & Safety Trainings', id: 'security-training' },
+  { icon: PackageSearch, title: 'Assets Recovery', id: 'assets-recovery' },
+  { icon: Users, title: 'Crowd Control', id: 'crowd-control' },
+  { icon: Flame, title: 'Fire Alarm Systems', id: 'fire-alarm' },
+  { icon: Luggage, title: 'Luggage & Baggage Scanners', id: 'baggage-scanners' },
+  { icon: DoorOpen, title: 'Automatic Gates', id: 'automatic-gates' },
+  { icon: UserCheck, title: 'Background Checks', id: 'background-checks' },
+  { icon: ScanSearch, title: 'Walkthrough Metal Detectors', id: 'metal-detectors' },
+  { icon: PawPrint, title: 'Dog Surveillance Services', id: 'dog-surveillance' },
 ];
 
 export const serviceDetails = [
@@ -249,6 +249,86 @@ export const serviceDetails = [
     alt: 'K9 unit with handler on patrol',
     paragraphs: [
       "Our trained dog units work alongside our guard teams to provide an added layer of surveillance and deterrence, particularly for perimeter patrols and high-risk sites. Handlers are experienced in managing K9 units safely alongside the public and site staff.",
+    ],
+  },
+  {
+    id: 'events-security',
+    icon: Tent,
+    title: 'Events Security',
+    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Events+Security',
+    highlights: [
+      'Ushering and access screening',
+      'VIP and dignitary protection',
+      'Crowd flow and entry management',
+      'Scalable teams for any event size',
+    ],
+    alt: 'Security officers managing entry at an event',
+    paragraphs: [
+      "We provide dedicated security teams for events of all sizes, from corporate functions to large public gatherings. Our officers handle access screening, ushering, VIP protection, and coordination with event organizers to ensure a safe and orderly experience for every guest.",
+    ],
+  },
+  {
+    id: 'private-investigations',
+    icon: Search,
+    title: 'Private Investigations',
+    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Investigations',
+    highlights: [
+      'Discreet, professional investigators',
+      'Fraud and theft investigations',
+      'Surveillance and evidence gathering',
+      'Confidential reporting to clients',
+    ],
+    alt: 'Private investigator reviewing case documents',
+    paragraphs: [
+      "Our investigations team handles sensitive matters such as fraud, theft, and workplace misconduct with discretion and professionalism. We gather evidence through surveillance and diligent fact-finding, providing clients with clear, confidential reports to support their decision-making.",
+    ],
+  },
+  {
+    id: 'security-training',
+    icon: GraduationCap,
+    title: 'Security & Safety Trainings',
+    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Training',
+    highlights: [
+      'Foot drills and patrol skills',
+      'First aid and fire fighting',
+      'Search, arrest and self-defense skills',
+      'Available for staff, households and groups',
+    ],
+    alt: 'Security guards during a training drill',
+    paragraphs: [
+      "We consult in building security literacy and awareness for groups, companies, and families, enhancing individual alertness and preparedness. Our training covers foot drills, first aid, fire fighting, patrol skills, search and arrest techniques, and self-defense, delivered to both company employees and individual households.",
+    ],
+  },
+  {
+    id: 'assets-recovery',
+    icon: PackageSearch,
+    title: 'Assets Recovery',
+    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Assets+Recovery',
+    highlights: [
+      'Tracks and recovers lost or stolen assets',
+      'Handles fraud and corruption cases',
+      'Uses modern tracking technology',
+      'Supports both companies and individuals',
+    ],
+    alt: 'Asset tracking and recovery operation',
+    paragraphs: [
+      "We provide asset tracking and recovery services in cases of fraud, corruption, and general theft, embracing the latest technology to trace and recover assets efficiently on behalf of our clients.",
+    ],
+  },
+  {
+    id: 'crowd-control',
+    icon: Users,
+    title: 'Crowd Control',
+    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Crowd+Control',
+    highlights: [
+      'Organized, disciplined crowd management',
+      'Suited for large public gatherings',
+      'Reduces risk of incidents and disorder',
+      'Coordinated with event organizers and police',
+    ],
+    alt: 'Guards managing crowd control at a public event',
+    paragraphs: [
+      "We manage large crowds at events and public gatherings with a calm, organized approach, minimizing the risk of disorder and ensuring the safety of attendees. Our teams coordinate closely with event organizers and, where required, local police.",
     ],
   },
 ];

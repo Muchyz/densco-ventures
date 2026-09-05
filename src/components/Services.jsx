@@ -1,4 +1,4 @@
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ChevronRight } from "lucide-react";
 import { Link } from 'react-router-dom';
 import { coreServices, serviceDetails } from '../data/content.js';
 
@@ -16,10 +16,10 @@ export default function Services({ detailed = false }) {
 
         <div className="services-grid">
           {coreServices.map((s) => (
-            <div className="card service-card" key={s.title}>
+            <Link to={`/services/${s.id}`} className="card service-card" key={s.title} style={{ textDecoration: 'none' }}>
               <div className="service-card__icon"><s.icon size={28} strokeWidth={2} /></div>
               <h3>{s.title}</h3>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -85,6 +85,9 @@ export default function Services({ detailed = false }) {
                       ))}
                     </ul>
                   )}
+                  <Link to={`/services/${svc.id}`} className="service-card__link" style={{ marginTop: '16px' }}>
+                    Learn More
+                  </Link>
                 </div>
               </div>
             ))}
