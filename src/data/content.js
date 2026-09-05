@@ -1,4 +1,5 @@
 import consultancyImg from '../assets/images/consultancy.jpg';
+import securityTrainingImg from '../assets/images/security-training.jpg';
 import piBadge from '../assets/badges/private-investigator-badge.jpg';
 import metalDetectorImg from '../assets/images/metal-detector.jpg';
 import baggageScannerImg from '../assets/images/baggage-scanner.jpg';
@@ -272,8 +273,7 @@ export const serviceDetails = [
     id: 'private-investigations',
     icon: Search,
     title: 'Private Investigations',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Investigations',
-    badgeImage: piBadge,
+    image: piBadge,
     highlights: [
       'Discreet, professional investigators',
       'Fraud and theft investigations',
@@ -289,7 +289,7 @@ export const serviceDetails = [
     id: 'security-training',
     icon: GraduationCap,
     title: 'Security & Safety Trainings',
-    image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Training',
+    image: securityTrainingImg,
     highlights: [
       'Foot drills and patrol skills',
       'First aid and fire fighting',

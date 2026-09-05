@@ -32,9 +32,6 @@ export default function ServiceDetailPage() {
         }}
       >
         <div className="container">
-          {service.badgeImage && (
-            <img src={service.badgeImage} alt={`${service.title} badge`} className="service-page__hero-badge-img" />
-          )}
           {service.badge && <span className="service-page__badge">{service.badge}</span>}
           <span className="section-eyebrow">Our Services</span>
           <h1>{service.title}</h1>
@@ -143,7 +140,9 @@ export default function ServiceDetailPage() {
             {others.map((s) => (
               <Link to={`/services/${s.id}`} key={s.id} className="other-service-card">
                 <div className="other-service-card__img">
-                  <img src={s.images ? s.images[0] : s.image} alt={s.alt} />
+                  <div className="other-service-card__img-clip">
+                    <img src={s.images ? s.images[0] : s.image} alt={s.alt} />
+                  </div>
                   <div className="other-service-card__icon">
                     <s.icon size={20} strokeWidth={2} />
                   </div>
