@@ -429,7 +429,7 @@ export const testimonials = [
     name: 'Peter Mwangi',
     role: 'Facilities Lead, Mwangi Logistics Ltd',
     avatar: 'https://placehold.co/100x100/1B3A5C/FFFFFF?text=PM',
-    quote: 'PLACEHOLDER — replace with a real client testimonial.',
+    quote: 'Densco has kept our warehouse and fleet yard secure round the clock. Their guards are alert, disciplined, and quick to flag anything unusual before it becomes a problem.',
   },
   {
     name: 'Esther Njoki',
