@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { CheckCircle, ArrowLeft, ChevronRight } from 'lucide-react';
+import { CheckCircle, ArrowLeft, ChevronRight, Send, Phone, Radio } from 'lucide-react';
 import { serviceDetails, company } from '../data/content.js';
 
 export default function ServiceDetailPage() {
@@ -25,24 +25,25 @@ export default function ServiceDetailPage() {
   return (
     <main>
       {/* Hero */}
-      <div className="service-page__hero">
-        <img
-          src={service.images ? service.images[0] : service.image}
-          alt={service.alt}
-          className="service-page__hero-img"
-        />
-        <div className="service-page__hero-overlay" />
-        <div className="container service-page__hero-content">
-          <button onClick={() => navigate('/our-services')} className="service-page__back">
+      <div
+        className="page-hero--service"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(8,22,39,0.65) 0%, rgba(11,29,51,0.45) 45%, rgba(8,22,39,0.8) 100%), url(${service.images ? service.images[0] : service.image})`,
+        }}
+      >
+        <div className="container">
+          {service.badge && <span className="service-page__badge">{service.badge}</span>}
+          <span className="section-eyebrow">Our Services</span>
+          <h1>{service.title}</h1>
+        </div>
+      </div>
+
+      {/* Back bar */}
+      <div className="service-page__back-bar">
+        <div className="container">
+          <button onClick={() => navigate('/our-services')} className="service-page__back service-page__back--light">
             <ArrowLeft size={16} /> Back to Services
           </button>
-          {service.badge && <span className="service-page__badge">{service.badge}</span>}
-          <div className="service-page__hero-heading">
-            <div className="service-page__hero-icon">
-              <service.icon size={28} strokeWidth={2} />
-            </div>
-            <h1 className="service-page__title">{service.title}</h1>
-          </div>
         </div>
       </div>
 
@@ -91,19 +92,24 @@ export default function ServiceDetailPage() {
           {/* Sidebar CTA */}
           <div>
             <div className="service-page__cta">
+              <div className="service-page__cta-icon">
+                <Send size={22} strokeWidth={2} />
+              </div>
               <h3>Ready to get started?</h3>
               <p>Our team will assess your needs and provide a custom quote.</p>
-              <Link to="/contact" className="btn btn--primary service-page__cta-btn">
-                Request a Quote
+              <Link to="/contact" className="service-page__cta-btn service-page__cta-btn--primary">
+                <Send size={16} /> Request a Quote
               </Link>
-              <a href={`tel:${company.phones[0].replace(/\s/g, '')}`} className="btn btn--primary service-page__cta-btn" style={{ marginTop: '10px', background: '#1B3A5C' }}>
-                Call {company.phones[0]}
+              <a href={`tel:${company.phones[0].replace(/\s/g, '')}`} className="service-page__cta-btn service-page__cta-btn--outline">
+                <Phone size={16} /> Call {company.phones[0]}
               </a>
             </div>
 
             <div className="control-room-strip">
               <div className="control-room-strip__header">
-                <span>Control Room</span>
+                <span className="control-room-strip__title">
+                  <Radio size={15} /> Control Room
+                </span>
                 <span className="control-room-strip__live">
                   <span className="control-room-strip__dot" />
                   Active 24/7

@@ -3239,7 +3239,73 @@ a:focus-visible, button:focus-visible {
   margin: 18px auto 0;
   background: linear-gradient(90deg, var(--red) 0%, #e8c25a 100%);
   border-radius: 2px;
+}.page-hero--contact h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: linear-gradient(90deg, var(--red) 0%, #e8c25a 100%);
+  border-radius: 2px;
 }
+
+.page-hero--service {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0 60px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+.page-hero--service .section-eyebrow {
+  position: relative;
+  z-index: 2;
+  color: #e8c25a;
+  justify-content: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.page-hero--service h1 {
+  position: relative;
+  z-index: 2;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: none;
+  color: var(--white);
+  font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+  margin: 12px 0 0;
+  letter-spacing: -0.01em;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.55);
+}
+.page-hero--service h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: linear-gradient(90deg, var(--red) 0%, #e8c25a 100%);
+  border-radius: 2px;
+}
+.service-page__back-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-border);
+  padding: 14px 0;
+}
+.service-page__back--light {
+  color: var(--navy) !important;
+}
+.service-page__back--light:hover {
+  color: var(--red) !important;
+}
+.page-hero--service .service-page__badge {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 .page-hero--contact .section-eyebrow {
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
@@ -3773,6 +3839,7 @@ a:focus-visible, button:focus-visible {
   font-size: clamp(1.6rem, 5vw, 2.4rem);
   line-height: 1.15;
   margin: 0;
+  color: #fff;
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 .service-page__grid {
@@ -3801,24 +3868,97 @@ a:focus-visible, button:focus-visible {
   aspect-ratio: 4/3;
 }
 .service-page__cta {
-  background: #1B3A5C;
-  border-radius: 16px;
-  padding: 28px;
+  position: relative;
+  background: linear-gradient(155deg, #1B3A5C 0%, #0d1f33 100%);
+  border-radius: 20px;
+  padding: 32px 28px;
   color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  border-left: 4px solid #D4A017;
+  box-shadow: 0 20px 44px rgba(11,29,51,0.35);
+}
+.service-page__cta::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,160,23,0.16) 0%, transparent 72%);
+  z-index: 0;
+  pointer-events: none;
+}
+.service-page__cta::after {
+  content: none;
+}
+.service-page__cta-icon {
+  position: relative;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(150deg, #D4A017 0%, #b8860b 100%);
+  color: #12283F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 18px rgba(212,160,23,0.35);
 }
 .service-page__cta h3 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #fff;
 }
 .service-page__cta p {
-  color: rgba(255,255,255,0.7);
+  position: relative;
+  z-index: 1;
+  color: rgba(255,255,255,0.65);
   font-size: 0.9rem;
-  margin-bottom: 20px;
+  line-height: 1.55;
+  margin-bottom: 22px;
 }
 .service-page__cta-btn {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  text-align: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: var(--font-display, inherit);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.service-page__cta-btn--primary {
+  background: linear-gradient(135deg, #E8B923 0%, #D4A017 100%);
+  color: #12283F;
+  box-shadow: 0 10px 24px rgba(212,160,23,0.4);
+  margin-bottom: 12px;
+}
+.service-page__cta-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(212,160,23,0.5);
+}
+.service-page__cta-btn--outline {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+}
+.service-page__cta-btn--outline:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.35);
 }
 
 /* ---------- Enamos-style touches ---------- */
