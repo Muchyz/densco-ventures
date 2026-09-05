@@ -32,6 +32,9 @@ export default function ServiceDetailPage() {
         }}
       >
         <div className="container">
+          {service.badgeImage && (
+            <img src={service.badgeImage} alt={`${service.title} badge`} className="service-page__hero-badge-img" />
+          )}
           {service.badge && <span className="service-page__badge">{service.badge}</span>}
           <span className="section-eyebrow">Our Services</span>
           <h1>{service.title}</h1>

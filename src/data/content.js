@@ -1,4 +1,5 @@
 import consultancyImg from '../assets/images/consultancy.jpg';
+import piBadge from '../assets/badges/private-investigator-badge.jpg';
 import metalDetectorImg from '../assets/images/metal-detector.jpg';
 import baggageScannerImg from '../assets/images/baggage-scanner.jpg';
 import backgroundCheckImg from '../assets/images/background-check.jpg';
@@ -272,6 +273,7 @@ export const serviceDetails = [
     icon: Search,
     title: 'Private Investigations',
     image: 'https://placehold.co/600x400/1B3A5C/FFFFFF?text=Investigations',
+    badgeImage: piBadge,
     highlights: [
       'Discreet, professional investigators',
       'Fraud and theft investigations',
