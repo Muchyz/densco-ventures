@@ -3875,7 +3875,7 @@ a:focus-visible, button:focus-visible {
   color: #fff;
   overflow: hidden;
   isolation: isolate;
-  border-left: 4px solid #D4A017;
+  border-left: 4px solid #E32227;
   box-shadow: 0 20px 44px rgba(11,29,51,0.35);
 }
 .service-page__cta::before {
@@ -3886,7 +3886,7 @@ a:focus-visible, button:focus-visible {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212,160,23,0.16) 0%, transparent 72%);
+  background: radial-gradient(circle, rgba(227,34,39,0.18) 0%, transparent 72%);
   z-index: 0;
   pointer-events: none;
 }
@@ -3899,13 +3899,13 @@ a:focus-visible, button:focus-visible {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(150deg, #D4A017 0%, #b8860b 100%);
-  color: #12283F;
+  background: linear-gradient(150deg, #E32227 0%, #B81A1E 100%);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
-  box-shadow: 0 8px 18px rgba(212,160,23,0.35);
+  box-shadow: 0 8px 18px rgba(227,34,39,0.4);
 }
 .service-page__cta h3 {
   position: relative;
@@ -3941,14 +3941,14 @@ a:focus-visible, button:focus-visible {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 .service-page__cta-btn--primary {
-  background: linear-gradient(135deg, #E8B923 0%, #D4A017 100%);
-  color: #12283F;
-  box-shadow: 0 10px 24px rgba(212,160,23,0.4);
+  background: linear-gradient(135deg, #E8323A 0%, #C0392B 100%);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(227,34,39,0.4);
   margin-bottom: 12px;
 }
 .service-page__cta-btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(212,160,23,0.5);
+  box-shadow: 0 14px 30px rgba(227,34,39,0.5);
 }
 .service-page__cta-btn--outline {
   background: rgba(255,255,255,0.06);
