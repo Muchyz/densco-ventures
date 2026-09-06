@@ -380,6 +380,16 @@ export const galleryImages = [
   { id: 17, src: '/gallery/k9-team.mp4', type: 'video', caption: 'K9 unit on duty with handlers' },
   { id: 18, src: '/gallery/k9-gate-duty.mp4', type: 'video', caption: 'K9 unit and guards on duty at a client gate' },
   { id: 19, src: '/gallery/control-room-monitoring.jpg', caption: '24/7 monitoring and control room support' },
+  { id: 20, src: '/gallery/team-photo.jpg', caption: 'Densco Ventures management and staff team' },
+  { id: 21, src: '/gallery/aircraft-duty.jpg', caption: 'Guard on duty at an airstrip' },
+  { id: 22, src: '/gallery/guard-uniform.jpg', caption: 'Densco guard uniform with baton and duty belt' },
+  { id: 23, src: '/gallery/salute-drill.jpg', caption: 'Trainee guards saluting during a drill' },
+  { id: 24, src: '/gallery/salute-drill-2.jpg', caption: 'Guards in formation saluting during training' },
+  { id: 25, src: '/gallery/drill-march.jpg', caption: 'Guards marching during a foot drill' },
+  { id: 26, src: '/gallery/supervisor-briefing.jpg', caption: 'Supervisor briefing a uniformed guard team' },
+  { id: 27, src: '/gallery/vehicle-inspection-yard.jpg', caption: 'Guards conducting vehicle inspection at a client yard' },
+  { id: 28, src: '/gallery/vehicle-inspection.jpg', caption: 'Guard performing a vehicle inspection at a checkpoint' },
+  { id: 29, src: '/gallery/k9-airstrip.jpg', caption: 'K9 unit and handler on duty at Ithookwe Airstrip' },
 ];
 
 export const testimonials = [
