@@ -9,6 +9,7 @@ import {
   MessageSquareQuote,
   Award,
   UserRound,
+  Briefcase,
   PhoneCall,
   Menu,
   X,
@@ -22,6 +23,7 @@ const pageLinks = [
   { label: 'Gallery', to: '/gallery', icon: Images },
   { label: 'Certifications', to: '/certifications', icon: ShieldCheck },
   { label: 'Testimonials', to: '/testimonials', icon: MessageSquareQuote },
+  { label: 'Careers', to: '/careers', icon: Briefcase },
 ];
 
 const hashLinks = [

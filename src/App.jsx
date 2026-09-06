@@ -10,6 +10,7 @@ import GalleryPage from './pages/Gallery.jsx';
 import TestimonialsPage from './pages/Testimonials.jsx';
 import ContactPage from './pages/Contact.jsx';
 import CertificationsPage from './pages/Certifications.jsx';
+import CareersPage from './pages/Careers.jsx';
 import ServiceDetailPage from './pages/ServiceDetailPage.jsx';
 
 // Handles anchor-scroll behaviour: if the URL has a #hash, scroll that
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/certifications" element={<CertificationsPage />} />
+        <Route path="/careers" element={<CareersPage />} />
       </Routes>
       <Footer />
     </>
