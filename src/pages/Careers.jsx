@@ -53,10 +53,12 @@ export default function CareersPage() {
           <div className="careers-roles-grid">
             {careerRoles.map((role) => (
               <div className="careers-role-card" key={role.id}>
-                <div className="careers-role-card__icon">
-                  <Briefcase size={22} />
+                <div className="careers-role-card__header">
+                  <div className="careers-role-card__icon">
+                    <Briefcase size={22} />
+                  </div>
+                  <h3>{role.title}</h3>
                 </div>
-                <h3>{role.title}</h3>
                 <p className="careers-role-card__summary">{role.summary}</p>
                 <ul className="careers-role-card__list">
                   {role.requirements.map((req, i) => (
