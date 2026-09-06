@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://densco.co.ke/sitemap.xml

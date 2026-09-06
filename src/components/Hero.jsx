@@ -4,9 +4,9 @@ import { Clock, ShieldCheck, Award, ArrowRight, PhoneCall } from 'lucide-react';
 import { company } from '../data/content.js';
 
 const heroImages = [
+  { src: '/team/densco-signpost.jpg', alt: 'Densco Ventures company signpost' },
   { src: '/team/director-address.jpg', alt: 'Densco Ventures director addressing officers' },
   { src: '/team/guard-2.jpg', alt: 'Densco Ventures officers on patrol' },
-  { src: '/team/guard-3.jpg', alt: 'Densco Ventures team at client site' },
 ];
 
 const badges = ['Licensed', 'Fully Insured', '24/7 Available'];
