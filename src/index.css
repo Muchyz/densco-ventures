@@ -2304,10 +2304,10 @@ a:focus-visible, button:focus-visible {
 }
 
 .careers-apply-card {
-  background: linear-gradient(160deg, #0B1D33 0%, #14263f 100%);
+  background: linear-gradient(160deg, #0B2447 0%, #163a68 100%);
   border-radius: 18px;
   padding: 48px clamp(24px, 5vw, 56px);
-  box-shadow: 0 20px 50px rgba(11, 29, 51, 0.25);
+  box-shadow: 0 20px 50px rgba(11, 36, 71, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -2319,7 +2319,7 @@ a:focus-visible, button:focus-visible {
   right: -10%;
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, rgba(212, 160, 23, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -2329,7 +2329,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .careers-apply-card .section-eyebrow {
-  color: var(--gold);
+  color: #60A5FA;
 }
 
 .careers-apply-card .section-intro {
@@ -2337,8 +2337,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .careers-apply-card .contact-form__field {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(96, 165, 250, 0.08);
+  border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
 .careers-apply-card .contact-form__field input,
@@ -2354,7 +2354,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .careers-apply-card .contact-form__icon {
-  color: var(--gold);
+  color: #60A5FA;
 }
 
 .careers-apply-card .contact-form__field select {
@@ -2373,7 +2373,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .careers-success__icon {
-  color: var(--gold);
+  color: #60A5FA;
   margin-bottom: 14px;
 }
 
@@ -2454,9 +2454,9 @@ a:focus-visible, button:focus-visible {
   height: 48px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: rgba(212, 160, 23, 0.12);
-  border: 1px solid rgba(212, 160, 23, 0.35);
-  color: var(--gold);
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  color: #60A5FA;
   display: flex;
   align-items: center;
   justify-content: center;

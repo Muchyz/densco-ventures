@@ -14,13 +14,6 @@ export default function CareersPage() {
     const form = e.target;
     const data = new FormData(form);
 
-    const cvFile = form.elements['cv']?.files?.[0];
-    if (cvFile && cvFile.size > 5 * 1024 * 1024) {
-      setError('Your CV file is larger than 5MB. Please upload a smaller file.');
-      setSubmitting(false);
-      return;
-    }
-
     try {
       const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
@@ -136,21 +129,6 @@ export default function CareersPage() {
                     name="message"
                     placeholder="Tell us about your experience, qualifications, and why you'd like to join Densco Ventures..."
                     required
-                  />
-                </div>
-
-                <div className="careers-file-field">
-                  <label htmlFor="cv-upload" className="careers-file-field__label">
-                    <FileText size={18} className="contact-form__icon" />
-                    <span>Upload your CV (PDF or Word, max 5MB)</span>
-                  </label>
-                  <input
-                    id="cv-upload"
-                    type="file"
-                    name="cv"
-                    accept=".pdf,.doc,.docx"
-                    required
-                    className="careers-file-field__input"
                   />
                 </div>
 
