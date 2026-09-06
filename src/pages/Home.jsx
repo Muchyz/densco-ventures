@@ -1,3 +1,4 @@
+import SEO from '../components/SEO.jsx';
 import Hero from '../components/Hero.jsx';
 import Divider from '../components/Divider.jsx';
 import About from '../components/About.jsx';
@@ -20,6 +21,11 @@ import ContactSection from '../components/ContactSection.jsx';
 export default function Home() {
   return (
     <main>
+      <SEO
+        title="Densco Ventures Limited | Professional Security Services in Kitui, Kenya"
+        description="Licensed security guarding, CCTV, alarm systems, access control, and private investigations in Kitui, Mutomo, Mwingi, Zombe, Matuu, Wote, and Nairobi. Available 24/7."
+        path="/"
+      />
       <Hero />
       <Divider />
 

@@ -1,9 +1,15 @@
+import SEO from '../components/SEO.jsx';
 import Testimonials from '../components/Testimonials.jsx';
 import { testimonials } from '../data/content.js';
 
 export default function TestimonialsPage() {
   return (
     <main>
+      <SEO
+        title="Client Testimonials | Densco Ventures Limited"
+        description="Read reviews from clients who trust Densco Ventures Limited for professional, reliable security services in Kitui, Kenya."
+        path="/testimonials"
+      />
 
       <Testimonials />
 

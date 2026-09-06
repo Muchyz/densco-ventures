@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import SEO from '../components/SEO.jsx';
 import Services from '../components/Services.jsx';
 
 export default function OurServicesPage() {
@@ -16,6 +17,11 @@ export default function OurServicesPage() {
 
   return (
     <main>
+      <SEO
+        title="Our Security Services | Densco Ventures Limited - Kitui, Kenya"
+        description="Explore our full range of security services: guarding, CCTV surveillance, alarm systems, access control, and private investigations across Kitui and surrounding regions."
+        path="/our-services"
+      />
       {/* detailed=true renders the full write-up for each service */}
       <div className="our-services-page">
         <Services detailed={true} />

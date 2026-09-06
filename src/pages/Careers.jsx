@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Briefcase, User, Mail, Phone, FileText, CheckCircle2 } from 'lucide-react';
 import { careerRoles } from '../data/content.js';
+import SEO from '../components/SEO.jsx';
 
 export default function CareersPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -44,6 +45,11 @@ export default function CareersPage() {
 
   return (
     <main>
+      <SEO
+        title="Careers | Join Densco Ventures Limited Security Team"
+        description="Explore current job openings at Densco Ventures Limited. Join our team of licensed security professionals in Kitui, Kenya."
+        path="/careers"
+      />
       <div className="page-hero page-hero--careers">
         <div className="container">
           <span className="section-eyebrow">Join Our Team</span>

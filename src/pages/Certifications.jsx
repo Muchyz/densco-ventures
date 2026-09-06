@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { FileBadge, ShieldCheck } from 'lucide-react';
+import SEO from '../components/SEO.jsx';
 
 const certifications = [
   {
@@ -74,6 +75,11 @@ export default function CertificationsPage() {
 
   return (
     <main>
+      <SEO
+        title="Certifications & Licensing | Densco Ventures Limited"
+        description="Densco Ventures Limited is a fully registered, PSRA-licensed, and tax-compliant private security company operating in Kenya."
+        path="/certifications"
+      />
       <div className="page-hero page-hero--certifications">
         <div className="container">
           <span className="section-eyebrow">Fully Licensed &amp; Compliant</span>
