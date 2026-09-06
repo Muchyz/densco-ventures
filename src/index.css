@@ -2404,7 +2404,17 @@ a:focus-visible, button:focus-visible {
 }
 
 .careers-role-card::after {
-  display: none;
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border-top: 2px solid rgba(212, 160, 23, 0.35);
+  border-right: 2px solid rgba(212, 160, 23, 0.35);
+  border-top-right-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
 }
 
 .careers-role-card:hover::after {
