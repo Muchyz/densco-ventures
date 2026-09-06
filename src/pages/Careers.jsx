@@ -14,6 +14,13 @@ export default function CareersPage() {
     const form = e.target;
     const data = new FormData(form);
 
+    const cvFile = form.elements['cv']?.files?.[0];
+    if (cvFile && cvFile.size > 5 * 1024 * 1024) {
+      setError('Your CV file is larger than 5MB. Please upload a smaller file.');
+      setSubmitting(false);
+      return;
+    }
+
     try {
       const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
@@ -60,6 +67,7 @@ export default function CareersPage() {
                   <h3>{role.title}</h3>
                 </div>
                 <p className="careers-role-card__summary">{role.summary}</p>
+                <span className="careers-role-card__label">Requirements</span>
                 <ul className="careers-role-card__list">
                   {role.requirements.map((req, i) => (
                     <li key={i}>
@@ -73,8 +81,15 @@ export default function CareersPage() {
           </div>
 
           <div className="careers-apply-card">
-            <span className="section-eyebrow careers-eyebrow">Take The Next Step</span>
-            <h2 className="section-heading" style={{ marginBottom: '10px' }}>Apply Now</h2>
+            <div className="careers-apply-card__header">
+              <div className="careers-apply-card__icon">
+                <FileText size={22} />
+              </div>
+              <div>
+                <span className="section-eyebrow careers-eyebrow">Take The Next Step</span>
+                <h2 className="section-heading" style={{ marginBottom: '10px' }}>Apply Now</h2>
+              </div>
+            </div>
             <p className="section-intro" style={{ marginBottom: '30px' }}>
               Fill in your details below and our HR team will review your application.
             </p>
@@ -121,6 +136,21 @@ export default function CareersPage() {
                     name="message"
                     placeholder="Tell us about your experience, qualifications, and why you'd like to join Densco Ventures..."
                     required
+                  />
+                </div>
+
+                <div className="careers-file-field">
+                  <label htmlFor="cv-upload" className="careers-file-field__label">
+                    <FileText size={18} className="contact-form__icon" />
+                    <span>Upload your CV (PDF or Word, max 5MB)</span>
+                  </label>
+                  <input
+                    id="cv-upload"
+                    type="file"
+                    name="cv"
+                    accept=".pdf,.doc,.docx"
+                    required
+                    className="careers-file-field__input"
                   />
                 </div>
 
