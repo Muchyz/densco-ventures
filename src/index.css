@@ -1527,10 +1527,19 @@ a:focus-visible, button:focus-visible {
 .navbar__brand {
   gap: 12px;
 }
+.navbar {
+  overflow: visible;
+}
+.navbar__inner {
+  overflow: visible;
+}
 .navbar__logo {
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
+  width: 76px;
+  height: 76px;
+  min-width: 76px;
+  margin: -10px 0;
+  position: relative;
+  z-index: 2;
   
   
   object-fit: contain;
