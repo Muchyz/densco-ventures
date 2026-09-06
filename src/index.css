@@ -2501,6 +2501,27 @@ a:focus-visible, button:focus-visible {
   cursor: pointer;
 }
 
+.careers-role-card__apply-btn {
+  margin-top: 22px;
+  width: 100%;
+  padding: 11px 18px;
+  border-radius: 8px;
+  border: 1.5px solid var(--navy);
+  background: transparent;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.careers-role-card__apply-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 .page-hero--about {
   position: relative;
   min-height: 340px;

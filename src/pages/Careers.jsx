@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Briefcase, User, Mail, Phone, FileText, CheckCircle2 } from 'lucide-react';
 import { careerRoles } from '../data/content.js';
 
@@ -6,6 +6,16 @@ export default function CareersPage() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
+  const [selectedRole, setSelectedRole] = useState('');
+  const applyRef = useRef(null);
+
+  const handleApplyClick = (roleTitle) => {
+    setSelectedRole(roleTitle);
+    setSubmitted(false);
+    if (applyRef.current) {
+      applyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -69,11 +79,18 @@ export default function CareersPage() {
                     </li>
                   ))}
                 </ul>
+                <button
+                  type="button"
+                  className="careers-role-card__apply-btn"
+                  onClick={() => handleApplyClick(role.title)}
+                >
+                  Apply for this role
+                </button>
               </div>
             ))}
           </div>
 
-          <div className="careers-apply-card">
+          <div className="careers-apply-card" ref={applyRef} id="apply-form">
             <div className="careers-apply-card__header">
               <div className="careers-apply-card__icon">
                 <FileText size={22} />
@@ -115,7 +132,12 @@ export default function CareersPage() {
 
                 <div className="contact-form__field">
                   <Briefcase className="contact-form__icon" size={18} />
-                  <select name="role" defaultValue="" required>
+                  <select
+                    name="role"
+                    value={selectedRole}
+                    onChange={(e) => setSelectedRole(e.target.value)}
+                    required
+                  >
                     <option value="" disabled>Select Role You're Applying For</option>
                     {careerRoles.map((role) => (
                       <option key={role.id} value={role.title}>{role.title}</option>
