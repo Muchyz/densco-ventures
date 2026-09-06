@@ -528,7 +528,7 @@ button { font-family: inherit; cursor: pointer; }
 .hero__media-dots {
   position: absolute;
   z-index: 3;
-  top: clamp(16px, 3vh, 24px);
+  bottom: clamp(16px, 3vh, 24px);
   right: clamp(16px, 4vw, 32px);
   display: flex;
   gap: 8px;
