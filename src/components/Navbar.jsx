@@ -21,7 +21,6 @@ const pageLinks = [
   { label: 'About Us', to: '/about', icon: Info },
   { label: 'Our Services', to: '/our-services', icon: ShieldCheck },
   { label: 'Gallery', to: '/gallery', icon: Images },
-  { label: 'Certifications', to: '/certifications', icon: ShieldCheck },
   { label: 'Testimonials', to: '/testimonials', icon: MessageSquareQuote },
   { label: 'Careers', to: '/careers', icon: Briefcase },
 ];

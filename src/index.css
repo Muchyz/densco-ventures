@@ -1772,7 +1772,6 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- Force brand-colored social icons ---------- */
 
-
 .navbar__drawer-social-label {
   text-align: center;
   color: rgba(0,0,0,0.55);
@@ -1841,9 +1840,6 @@ a:focus-visible, button:focus-visible {
     font-size: 1.15rem;
   }
 }
-
-
-
 
 /* ---------- Footer logo (centered) ---------- */
 .footer-logo {
@@ -2074,8 +2070,6 @@ a:focus-visible, button:focus-visible {
 .testimonial-card--list .testimonial-card__progress {
   display: none;
 }
-
-
 
 /* ---------- Service detail icon + title row (always red badge) ---------- */
 .service-detail__title-row {
@@ -2735,12 +2729,10 @@ a:focus-visible, button:focus-visible {
   }
 }
 
-
 /* ---------- Our Services page: reduce top gap since navy hero was removed ---------- */
 .our-services-page .section {
   padding-top: 24px;
 }
-
 
 /* ---------- Service cards: rotate accent color per card ---------- */
 :root {
@@ -2780,7 +2772,6 @@ a:focus-visible, button:focus-visible {
   background: var(--svc-green);
 }
 
-
 /* Left border color rotation to match card accent */
 .service-detail:nth-of-type(3n+2) {
   border-left-color: var(--navy);
@@ -2788,7 +2779,6 @@ a:focus-visible, button:focus-visible {
 .service-detail:nth-of-type(3n+3) {
   border-left-color: var(--svc-green);
 }
-
 
 /* ---------- Bullets list (audit-style services) ---------- */
 .service-detail__bullets {
@@ -2822,14 +2812,12 @@ a:focus-visible, button:focus-visible {
   background: var(--svc-green);
 }
 
-
 /* Fix: force checklist checkmark text to stay white regardless of card color
    (overrides accidental color bleed from .service-detail__body li::before rule) */
 .service-detail:nth-of-type(3n+2) .service-detail__checklist li::before,
 .service-detail:nth-of-type(3n+3) .service-detail__checklist li::before {
   color: var(--white);
 }
-
 
 /* ---------- Why Choose Us: card grid matching Our Services theme ---------- */
 .why-grid {
@@ -2888,7 +2876,6 @@ a:focus-visible, button:focus-visible {
   background: linear-gradient(150deg, var(--svc-green) 0%, var(--svc-green-dark) 100%);
   box-shadow: 0 6px 14px rgba(26,122,60,0.35);
 }
-
 
 /* ---------- FAQ: modern polish ---------- */
 #faq {
@@ -2961,7 +2948,6 @@ a:focus-visible, button:focus-visible {
     align-items: start;
   }
 }
-
 
 /* ---------- Core Values: minimal professional list ---------- */
 .values-section-v4 {
@@ -3074,7 +3060,6 @@ a:focus-visible, button:focus-visible {
 .training-list li b {
   color: var(--navy);
 }
-
 
 /* ---------- Core Values: diagonal typographic ribbon ---------- */
 .values-section {
@@ -3208,7 +3193,6 @@ a:focus-visible, button:focus-visible {
   line-height: 1.6;
 }
 
-
 /* ---------- Mission/Vision: two-tone manifesto panels ---------- */
 .mv-grid {
   align-items: stretch;
@@ -3285,7 +3269,6 @@ a:focus-visible, button:focus-visible {
   margin: 0;
   max-width: 32ch;
 }
-
 
 /* ---------- About section: editorial photo frame + typography ---------- */
 .about-heading {
@@ -3752,13 +3735,6 @@ a:focus-visible, button:focus-visible {
   padding-top: 8px;
   background: var(--gray-light);
 }
-
-/* ---------- Certifications ---------- */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
 .cert-grid .cert-card {
   opacity: 0;
   transform: translateY(24px);
@@ -3920,65 +3896,6 @@ a:focus-visible, button:focus-visible {
   line-height: 1.5;
 }
 
-/* ---------- Certifications Hero ---------- */
-.page-hero--certifications {
-  position: relative;
-  overflow: hidden;
-  padding: 90px 0 76px;
-  text-align: center;
-}
-.page-hero--certifications::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('/team/certifications-hero.png');
-  background-size: cover;
-  background-position: center 40%;
-  filter: blur(3px);
-  animation: heroSlowZoom 18s ease-in-out infinite alternate;
-  z-index: 0;
-}
-.page-hero--certifications::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(8,22,39,0.65) 0%, rgba(11,29,51,0.45) 45%, rgba(8,22,39,0.75) 100%);
-  z-index: 1;
-}
-.page-hero--certifications .section-eyebrow {
-  position: relative;
-  z-index: 2;
-  color: #e8c25a;
-  justify-content: center;
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
-.page-hero--certifications h1 {
-  position: relative;
-  z-index: 2;
-  font-family: 'Playfair Display', serif;
-  font-style: normal;
-  letter-spacing: 0.01em;
-  font-weight: 800;
-  text-transform: none;
-  color: var(--white);
-  font-size: clamp(2.1rem, 5.5vw, 3.4rem);
-  margin: 12px 0 0;
-  letter-spacing: -0.01em;
-  text-shadow: 0 4px 18px rgba(0,0,0,0.55);
-}
-.page-hero--certifications h1::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 3px;
-  margin: 18px auto 0;
-  background: linear-gradient(90deg, var(--red) 0%, #e8c25a 100%);
-  border-radius: 2px;
-}
-
 /* ---------- Ribbon CTA Banner ---------- */
 .ribbon-cta {
   position: relative;
@@ -4049,80 +3966,6 @@ a:focus-visible, button:focus-visible {
     text-align: center;
   }
   .ribbon-cta__text { justify-content: center; }
-}
-
-/* ---------- Certifications Section Heading ---------- */
-#certifications .section-heading {
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
-  text-transform: none;
-  letter-spacing: -0.01em;
-  color: var(--navy);
-  font-size: clamp(1.8rem, 4.2vw, 2.6rem);
-  line-height: 1.15;
-}
-#certifications .section-heading .accent {
-  color: #b8860b;
-  font-style: italic;
-}
-#certifications .section-heading::after {
-  content: "";
-  display: block;
-  width: 56px;
-  height: 3px;
-  margin-top: 14px;
-  background: linear-gradient(90deg, var(--red) 0%, #e8c25a 100%);
-  border-radius: 2px;
-}
-
-/* ---------- Certifications Heading/Eyebrow Swap ---------- */
-#certifications .section-heading--with-icon {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 0;
-}
-#certifications .section-heading__icon-wrap {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4px;
-}
-#certifications .section-heading__icon {
-  width: 22px;
-  height: 22px;
-  color: var(--white);
-}
-#certifications .section-heading__text {
-  display: block;
-  flex: 1 1 auto;
-  min-width: 0;
-}
-#certifications .section-heading--with-icon::after {
-  content: none;
-}
-
-@media (max-width: 480px) {
-  #certifications .section-heading--with-icon {
-    font-size: clamp(1.5rem, 6vw, 2rem);
-  }
-  #certifications .section-heading__icon {
-    width: 22px;
-    height: 22px;
-    margin-top: 6px;
-  }
-}
-#certifications .section-eyebrow--plain {
-  display: block;
-  margin-top: 14px;
-}
-#certifications .section-heading--with-icon::after {
-  margin-top: 14px;
 }
 
 .service-card__link {
@@ -4498,9 +4341,6 @@ a:focus-visible, button:focus-visible {
   font-size: 0.85rem;
   font-weight: 600;
 }
-
-
-
 
 .protected-section {
   background: #f8f9fb;

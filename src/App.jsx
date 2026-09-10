@@ -9,7 +9,6 @@ import OurServicesPage from './pages/OurServices.jsx';
 import GalleryPage from './pages/Gallery.jsx';
 import TestimonialsPage from './pages/Testimonials.jsx';
 import ContactPage from './pages/Contact.jsx';
-import CertificationsPage from './pages/Certifications.jsx';
 import CareersPage from './pages/Careers.jsx';
 import ServiceDetailPage from './pages/ServiceDetailPage.jsx';
 
@@ -48,7 +47,6 @@ export default function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/certifications" element={<CertificationsPage />} />
         <Route path="/careers" element={<CareersPage />} />
       </Routes>
       <Footer />
