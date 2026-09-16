@@ -67,6 +67,47 @@ export default function Footer() {
           </div>
         </div>
 
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem", padding: "1.5rem 0", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+            <p style={{ color: "#8a8a8a", fontSize: "0.7rem", letterSpacing: "0.15em", textTransform: "uppercase" }}>Crafted with ♥ by</p>
+            <a
+              href="https://muchyz.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                position: "relative",
+                overflow: "hidden",
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                padding: "0.5rem 1.25rem",
+                borderRadius: "9999px",
+                fontSize: "0.7rem",
+                fontWeight: "bold",
+                textTransform: "uppercase",
+                letterSpacing: "0.15em",
+                textDecoration: "none",
+                transition: "all 0.3s",
+                background: "linear-gradient(90deg, #0E2A47, #1e4976, #0E2A47)",
+                border: "1px solid rgba(56,189,248,0.5)",
+                color: "#38BDF8",
+                boxShadow: "0 0 16px rgba(56,189,248,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
+              }}
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#38BDF8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Muchyz Digital Agency
+              <span
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  borderRadius: "9999px",
+                  pointerEvents: "none",
+                  background: "linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.08) 50%, transparent 60%)",
+                  animation: "shimmer 3s infinite"
+                }}
+              />
+            </a>
+          </div>
+
         <div className="footer-bottom">
           <span>
             © {year} {company.name}. All rights reserved.
