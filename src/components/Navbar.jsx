@@ -134,7 +134,7 @@ export default function Navbar() {
             <a href="https://www.facebook.com/denscoventuresltd" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookIcon /></a>
             <a href="https://wa.me/254745979476" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><WhatsAppIcon /></a>
             <a href="https://vm.tiktok.com/ZS9SdDa9mJxwm-djgxf/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokIcon /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
+            <a href="https://www.instagram.com/denscolimited?utm_source=qr&stkn=MWRrN21qbXI4amF5eQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
           </div>
         </nav>
       </aside>
