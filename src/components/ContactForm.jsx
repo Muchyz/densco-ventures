@@ -3,11 +3,34 @@ import { User, Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // No backend wired up yet — this just confirms the UI works.
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(false);
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch('https://formspree.io/f/myezdzzn', {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -98,8 +121,14 @@ export default function ContactForm() {
         <textarea name="message" placeholder="Tell us about your security needs..." required />
       </div>
 
-      <button type="submit" className="btn btn--red">
-        Submit
+      {error && (
+        <p style={{ color: '#c0392b', margin: '0 0 12px' }}>
+          Something went wrong sending your message. Please try again or call us directly.
+        </p>
+      )}
+
+      <button type="submit" className="btn btn--red" disabled={submitting}>
+        {submitting ? 'Sending...' : 'Submit'}
       </button>
     </form>
   );
