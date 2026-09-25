@@ -390,6 +390,9 @@ export const galleryImages = [
   { id: 27, src: '/gallery/vehicle-inspection-yard.jpg', caption: 'Guards conducting vehicle inspection at a client yard' },
   { id: 28, src: '/gallery/vehicle-inspection.jpg', caption: 'Guard performing a vehicle inspection at a checkpoint' },
   { id: 29, src: '/gallery/k9-airstrip.jpg', caption: 'K9 unit and handler on duty at Ithookwe Airstrip' },
+  { id: 30, src: '/gallery/guards-on-duty.jpg', caption: 'Densco Ventures security officers on duty at a client site' },
+  { id: 31, src: '/gallery/cctv-control-room.jpg', caption: 'CCTV control room with live monitoring of client premises' },
+  { id: 32, src: '/gallery/cctv-control-room-2.jpg', caption: 'CCTV monitoring station showing multi-camera surveillance feed' },
 ];
 
 export const testimonials = [
