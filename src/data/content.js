@@ -393,6 +393,7 @@ export const galleryImages = [
   { id: 30, src: '/gallery/guards-on-duty.jpg', caption: 'Densco Ventures security officers on duty at a client site' },
   { id: 31, src: '/gallery/cctv-control-room.jpg', caption: 'CCTV control room with live monitoring of client premises' },
   { id: 32, src: '/gallery/cctv-control-room-2.jpg', caption: 'CCTV monitoring station showing multi-camera surveillance feed' },
+  { id: 33, src: '/gallery/foot-patrol.jpg', caption: 'Guard on foot patrol in a client parking area' },
 ];
 
 export const testimonials = [
