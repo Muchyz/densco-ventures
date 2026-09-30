@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Building2 } from 'lucide-react';
-import { FacebookIcon, WhatsAppIcon, TikTokIcon, InstagramIcon } from './SocialIcons.jsx';
+import { FacebookIcon, WhatsAppIcon, TikTokIcon, InstagramIcon, YouTubeIcon } from './SocialIcons.jsx';
 import { company } from '../data/content.js';
 import ContactForm from './ContactForm.jsx';
 
@@ -63,6 +63,7 @@ export default function ContactSection() {
                     <a href="https://wa.me/254745979476" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><WhatsAppIcon /></a>
                     <a href="https://vm.tiktok.com/ZS9SdDa9mJxwm-djgxf/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokIcon /></a>
                     <a href="https://www.instagram.com/denscolimited?utm_source=qr&stkn=MWRrN21qbXI4amF5eQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><InstagramIcon /></a>
+                    <a href="https://youtube.com/@densco254" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><YouTubeIcon /></a>
                   </div>
                 </div>
               </li>
