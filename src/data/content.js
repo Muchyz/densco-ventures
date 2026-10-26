@@ -396,6 +396,11 @@ export const galleryImages = [
   { id: 33, src: '/gallery/foot-patrol.jpg', caption: 'Guard on foot patrol in a client parking area' },
   { id: 34, src: '/gallery/office-desk.jpg', caption: 'Densco Ventures office team member handling a client call' },
   { id: 35, src: '/gallery/guards-patrol-vehicle.jpg', caption: 'Densco guards in uniform and reflective vests beside the patrol vehicle' },
+  { id: 36, src: '/gallery/guards-school-gate.jpg', caption: 'Densco guards on duty at ASN Bishop Dunn School' },
+  { id: 37, src: '/gallery/team-entrance.jpg', caption: 'Densco guards and office staff at the entrance' },
+  { id: 38, src: '/gallery/guards-hi-vis.jpg', caption: 'Densco guards in high-visibility vests on duty' },
+  { id: 39, src: '/gallery/guards-attention.jpg', caption: 'Densco guards in uniform standing at attention' },
+  { id: 40, src: '/gallery/guards-company-vehicle.jpg', caption: 'Densco guards in reflective vests beside the company vehicle' },
 ];
 
 export const testimonials = [
